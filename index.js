@@ -236,7 +236,7 @@ async function startHisoka() {
                 console.log("Connection Replaced, Another New Session Opened, Please Restart Bot");
                 process.exit();
             } else if (reason === DisconnectReason.loggedOut) {
-                console.log(`Device Logged Out, Please Delete Folder Session yusril and Scan Again.`);
+                console.log(`Device Logged Out, Please Delete Folder Session Kalorize and Scan Again.`);
                 process.exit();
             } else if (reason === DisconnectReason.restartRequired) {
                 console.log("Restart Required, Restarting...");
@@ -252,7 +252,7 @@ async function startHisoka() {
             const botNumber = await client.decodeJid(client.user.id);
             console.log(color("Bot success conneted to server", "green"));
             console.log(color("Type /menu to see menu"));
-            client.sendMessage(botNumber, { text: `Bot started!\n\nSilakan... :)` });
+            client.sendMessage(botNumber, { text: `Bot started!\n\nKALORIZE NIH BOS SENGGOL DONG !!!` });
         }
         // console.log('Connected...', update)
     });
